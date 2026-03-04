@@ -1,3 +1,4 @@
+
 //you can use double quotes when you want to do something like I'm , in string can "I'm" +  and continue..
 const firstName = 'chris';
 const job = 'coder';
