@@ -85,3 +85,38 @@ function fruitProccesor(apples, oranges) {
 }; //dont forget semi colin
 
 console.log(fruitProccesor(2, 3));
+
+
+console.log("Hello world!!!");
+
+
+
+//challenge 1
+
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+
+let scoreDolphins = calcAverage(44, 23, 71);
+let scoreKoalas = calcAverage(65, 54, 49);
+
+const checkWinner = function (avgDolphins, avgKoalas) {
+
+    if(avgDolphins >= 2 * avgKoalas) {
+        console.log(`The Dolphins score is: ${avgDolphins} and the averageKoalas score is: ${avgKoalas} , There for Dolphin's win!`)
+    }
+
+    else if (avgDolphins <= 2 * avgKoalas) {
+        console.log(`The dolphins losing score is: ${avgDolphins}, and the Koalas win!: ${avgKoalas}`)
+    } else {
+        console.log("no team wins!")
+    }
+
+}
+
+checkWinner(scoreDolphins, scoreKoalas);
+
+checkWinner(576, 111);
+
+scoreDolphins = calcAverage(85, 54, 41);
+scoreKoalas = calcAverage(23, 34, 27);
+console.log(scoreDolphins, scoreKoalas);
+checkWinner(scoreDolphins, scoreKoalas);
